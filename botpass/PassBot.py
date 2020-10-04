@@ -20,12 +20,11 @@ def sli(message):
     bot.send_message(message.chat.id, sli)
 
 
-'''
-
-@bot.message_handler(commands=['mob'])
+@bot.message_handler(commands=['all pass'])
 def sli(message):
-    sli = open(passwds/slipass.txt)
-    bot.send_message(message.chat.id, mob)
+    sli2 = open(passwds/slipass.txt)
+    mob2 = open(passwds/mobpass.txt)
+    bot.send_message(message.chat.id, mob2,sli2)
 
 
 
